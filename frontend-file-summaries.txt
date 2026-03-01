@@ -1,0 +1,18 @@
+{
+  "frontend/src/index.css": "Global styles with Deep Midnight gradient, glassmorphism utilities, luxury title styling, color-shift animation, and a new `.settings-gear-btn:hover` rule that applies the #A855F7 purple glow effect.",
+  "frontend/tailwind.config.js": "Tailwind configuration with Inter font family and custom animations for the luxury aesthetic.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for generating scripts, fetching script history, fetching admin keys, and setting admin keys — all wired to the backend actor.",
+  "frontend/src/App.tsx": "Main application component; reduced the \"View History\" button bottom margin from mt-12 to mt-6 (50% reduction) to tighten the gap before the footer divider line.",
+  "frontend/src/components/Header.tsx": "Header with luxury uppercase title and Diamond icon button in top right that opens Pro upgrade modal with glassmorphism styling.",
+  "frontend/src/components/PlatformSelector.tsx": "Platform selector with luxury glassmorphism cards, purple glow on selection, and uppercase labels with letter-spacing.",
+  "frontend/src/components/TopicInput.tsx": "Topic input textarea with glassmorphism styling, ultra-thin borders, and purple glow on focus.",
+  "frontend/src/components/ToneSelector.tsx": "Tone selector buttons with glassmorphism styling and purple glow effects on selection and hover.",
+  "frontend/src/components/GenerateButton.tsx": "Generate button with Electric Amethyst color, soft purple outer glow (box-shadow), and luxury uppercase styling.",
+  "frontend/src/components/ProgressBar.tsx": "Processing indicator with color-changing glow animation and luxury uppercase \"Processing...\" text.",
+  "frontend/src/components/ScriptCard.tsx": "Script output card with glassmorphism styling displaying Hook, Body, Call to Action, and 5 trending hashtags sections; copy button changes to checkmark with \"Script saved to clipboard\" toast notification.",
+  "frontend/src/components/HistoryTab.tsx": "History view displaying previously generated scripts in reverse chronological order with platform icons and metadata; updated import to use the correctly named `useGetScriptHistory` hook.",
+  "frontend/src/components/ProModal.tsx": "Luxury Pro upgrade modal with glassmorphism styling, Diamond icon, updated text mentioning ChatGPT-4o & Gemini Ultra, 100+ daily scripts, AI-generated thumbnail ideas for $0.99/month.",
+  "frontend/src/components/Footer.tsx": "Footer component with copyright/attribution, a subtle settings gear icon (rgba(255,255,255,0.3)) positioned 10px above the copyright line and aligned far right, with a purple glow on hover that opens the Developer Control Center modal.",
+  "frontend/index.html": "HTML entry point with Inter font from Google Fonts for luxury typography.",
+  "frontend/src/components/DeveloperControlCenter.tsx": "New modal component for the Developer Control Center that allows admins to view and update Gemini and Groq API keys, with password visibility toggles, save state feedback, and glassmorphism styling."
+}

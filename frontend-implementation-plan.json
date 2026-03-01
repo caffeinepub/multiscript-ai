@@ -1,0 +1,52 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Anchor Settings Gear Icon & Fix Spacing",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Add a clickable Lucide Settings gear icon positioned 10px above the copyright footer, aligned to the far right, with subtle styling at rest and a purple glow on hover that opens the Developer Control Center modal",
+      "acceptanceCriteria": [
+        "A Lucide Settings gear icon is rendered in the footer area, visually positioned 10px above the copyright line.",
+        "The icon is horizontally aligned to the far right of the container.",
+        "The icon color is rgba(255, 255, 255, 0.3) by default.",
+        "On hover, the icon transitions to color #A855F7 with a visible glow effect.",
+        "Clicking the icon opens the Developer Control Center modal or navigates to the Developer Control Center view.",
+        "The icon does not interfere with or overlap the copyright text."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Import the Settings icon from lucide-react and add it as a clickable button element positioned 10px above the copyright text. Apply inline or Tailwind styles to position the icon at the far right of the container. Set the icon's default color to rgba(255, 255, 255, 0.3) and add hover styles that change the color to #A855F7 with a glow effect (e.g., text-shadow or drop-shadow filter). Wire the icon's onClick handler to open the Developer Control Center modal or navigate to the Developer Control Center view. Ensure the icon does not overlap or interfere with the existing copyright attribution."
+        },
+        {
+          "path": "frontend/src/components/DeveloperControlCenter.tsx",
+          "operation": "create",
+          "description": "Create a new modal or view component for the Developer Control Center that will be opened when the settings gear icon is clicked. This component should render a Dialog or modal overlay using shadcn/ui components (if available) or a custom modal container. Include a close button and placeholder content for developer settings or controls. Export this component so it can be imported and conditionally rendered in the Footer or App component."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add state to control the visibility of the Developer Control Center modal. Import the DeveloperControlCenter component and conditionally render it based on the modal state. Pass a setter function or callback to the Footer component (or lift the modal state to App) so that clicking the settings gear icon in Footer can trigger the modal to open. Ensure the modal can be closed by the user."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Reduce the vertical gap between the View History button and the bottom white divider line by 50% to create a tighter, more professional layout",
+      "acceptanceCriteria": [
+        "The vertical spacing between the View History element and the bottom white horizontal line is visibly reduced to approximately half of the current spacing.",
+        "No other layout elements are unintentionally shifted or overlapping as a result of this change.",
+        "The overall layout looks tighter and more polished."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Locate the View History button or toggle element and the white horizontal divider line rendered below it. Identify the current vertical spacing or margin applied between these elements (likely a Tailwind utility class such as mb-8, mt-8, or gap-8). Reduce the spacing value by approximately 50% (e.g., from mb-8 to mb-4, or from mt-8 to mt-4). Test the layout to ensure no unintended overlap or layout shifts occur and that the design feels tighter and more professional."
+        }
+      ]
+    }
+  ]
+}

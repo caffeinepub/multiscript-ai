@@ -1,0 +1,43 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-a-lucide-settings-gear-icon-positioned-exactly-10px-above-the-copyright-footer-aligned-to-the-far-right-of-the-container-style-the-icon-with-color-rgba-255-255-255-0-3-at-rest-on-hover-apply-a-purple-glow-effect-using-color-a855f7-with-a-matching-filter-or-text-shadow-glow-make-the-icon-a-clickable-element-that-opens-the-developer-control-center-modal-or-page-when-clicked",
+      "featureTitle": "Add a Lucide Settings gear icon positioned exactly 10px above the copyright footer, aligned to the far right of the container. Style the icon with color rgba(255, 255, 255, 0.3) at rest. On hover, apply a purple glow effect using color #A855F7 with a matching filter or text-shadow glow. Make the icon a clickable element that opens the Developer Control Center modal or page when clicked.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/DeveloperControlCenter.tsx",
+        "frontend/src/components/Footer.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-reduce-the-vertical-gap-between-the-view-history-button-and-the-bottom-white-divider-line-by-50-to-create-a-tighter-more-professional-layout",
+      "featureTitle": "Reduce the vertical gap between the View History button and the bottom white divider line by 50% to create a tighter, more professional layout.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

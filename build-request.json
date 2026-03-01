@@ -1,0 +1,63 @@
+{
+  "kind": "build_request",
+  "title": "Anchor Settings Gear Icon & Fix Spacing",
+  "projectName": "MultiScript AI",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Add a Lucide Settings gear icon positioned exactly 10px above the copyright footer, aligned to the far right of the container. Style the icon with color rgba(255, 255, 255, 0.3) at rest. On hover, apply a purple glow effect using color #A855F7 with a matching filter or text-shadow glow. Make the icon a clickable element that opens the Developer Control Center modal or page when clicked.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ],
+        "quotes": [
+          "Add a FontAwesome or Lucide settings gear icon exactly 10px above the copyright footer and aligned to the far right of the container.",
+          "Set the icon color to rgba(255, 255, 255, 0.3) so its subtle but visible. On hover, make it glow with color: #A855F7.",
+          "Make this icon a clickable link that opens the Developer Control Center modal/page."
+        ]
+      },
+      "acceptanceCriteria": [
+        "A Lucide Settings gear icon is rendered in the footer area, visually positioned 10px above the copyright line.",
+        "The icon is horizontally aligned to the far right of the container.",
+        "The icon color is rgba(255, 255, 255, 0.3) by default.",
+        "On hover, the icon transitions to color #A855F7 with a visible glow effect.",
+        "Clicking the icon opens the Developer Control Center modal or navigates to the Developer Control Center view.",
+        "The icon does not interfere with or overlap the copyright text."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Reduce the vertical gap between the View History button and the bottom white divider line by 50% to create a tighter, more professional layout.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ],
+        "quotes": [
+          "Fix Spacing: Reduce the large vertical gap between View History and the bottom white line by 50% to make the layout feel tighter and more professional."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The vertical spacing between the View History element and the bottom white horizontal line is visibly reduced to approximately half of the current spacing.",
+        "No other layout elements are unintentionally shifted or overlapping as a result of this change.",
+        "The overall layout looks tighter and more polished."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify files under frontend/src/hooks/ as they are immutable paths.",
+    "Do not modify frontend/src/main.tsx or frontend/src/components/ui as they are immutable paths.",
+    "Use Lucide React for the settings gear icon as it is already available in the project stack."
+  ],
+  "nonGoals": [
+    "Do not change any backend logic or Motoko files.",
+    "Do not redesign or restructure the Developer Control Center itself, only wire the gear icon to open it.",
+    "Do not alter the copyright text content or Footer attribution link."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
